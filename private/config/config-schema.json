@@ -1,0 +1,33 @@
+{
+    "websiteTitle":"",
+    "profileName":"",
+    "jobTitle":"",
+    "jobSubtitle":"",
+    "email":"",
+    "emailPass":"",
+    "receiverEmailAddress":"",
+    "receiverName":"",
+    "projects": [
+        {
+            "imagePath":"e.g picture1.jpeg",
+            "projectTitle":"",
+            "projectDescription":"",
+            "projectStack": [
+                {
+                    "name":"",
+                    "version":""
+                }
+            ]
+        }
+    ],
+    "socialLinks": [
+        {
+            "link":"",
+            "type":"can be one of: facebook, free-code-camp, github, instagram, linkedin, skype, stack-overflow, twitter, whatsapp, youtube",
+            "name":""
+        }
+    ],
+    "notes": [
+        ""
+    ]
+}

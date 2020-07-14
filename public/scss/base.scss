@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+$my-primary: whitesmoke;
+$my-secondary: #0c3a5f;
+$my-tertiary: rgb(0,0,0);
+$font-std: "Times New Roman, Times, serif";
+
+$btn-negative-col: #b2102f;
+$btn-possitive-col: #357a38;
+$btn-neutral-col: #313131;
+$link-std-col: #3d5afe;
+$link-visited-col: #2c387e;
+
+
+body {
+    background-color: $my-primary;
+}
+
+/*
+    Buttons
+*/
+button {
+    background-color: $btn-neutral-col;
+    color: white;
+    border: none;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 4px;
+    font-family: $font-std;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: $my-secondary;
+}
+
+.btn-possitive {
+    background-color: $btn-possitive-col;
+}
+
+.btn-negative {
+    background-color: $btn-negative-col;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+/*
+    Headings, paragraph links and label
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-std;
+    color: $my-secondary;
+    padding: 20px;
+}
+
+.h1-big {
+    font-size: 2em;
+}
+
+label {
+    font-family: $font-std;
+    color: $my-secondary;
+    padding: 10px;
+}
+
+p {
+    font-family: $font-std;
+    color: $my-secondary;
+    padding: 10px;
+}
+
+a {
+    color: $link-std-col;
+    :visited {
+        color: $link-visited-col;
+    }
+}
+
+/*
+    input, form and textareas
+*/
+form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+input, textarea {
+    width: 90%;
+    margin-bottom: 25px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px double gray;
+    border-radius: 5px;
+    color: gray;
+    :focus {
+        border: 2px solid gray;
+        color: black;
+    }
+}

@@ -1,0 +1,223 @@
+$my-max-width: 886px;
+$mat-col: #0c3a5f;
+$mat-sec-col: #303030;
+$shaddy: #dadada;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 30;
+    .nav-sect {
+        width: fit-content;
+        margin: 0;
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-self: center;
+        justify-content: initial;
+        button {
+            margin-right: 30px;
+        }
+        h2 {
+            padding: 0;
+            padding-left: 20px;
+        }
+    }
+    #col-nav {
+        display: flex;
+        @media screen and (max-width: $my-max-width) {
+            button {
+                margin-bottom: 20px;
+            }
+            display: none;
+        }
+    }
+}
+
+button {
+    i {
+        padding-right: 10px;
+    }
+}
+
+#intro {
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    div {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        .intro-sect {
+            position: relative;
+            button {
+                margin: 5px;
+            }
+        }
+    }
+}
+
+#profile-pic-div {
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-self: center;
+    border: 2px solid rgb(82, 15, 15);
+    img {
+        height: inherit;
+        overflow: hidden;
+    }
+}
+
+#btn-menu {
+    background-color: transparent;
+    display: none;
+    @media screen and (max-width: $my-max-width) {
+        display: inline;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    .project {
+        display: flex;
+        padding: 30px;
+        margin: 20px;
+        background-color: $shaddy;
+        border-radius: 10px;
+        @media screen and (max-width: $my-max-width){
+            flex-wrap: wrap;
+        }
+
+        .proj-img-div {
+            width: 300px;
+            border-radius: 5px;
+            background-color: $mat-col;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            img {
+                display: block;
+                width: 280px;
+                margin: auto;
+            }
+        }
+        .proj-sect {
+            width: fit-content;
+            .proj-stack {
+                display: flex;
+                flex-wrap: wrap;
+                .proj-tool {
+                    display: inline-flex;
+                    height: min-content;
+                    margin: 10px;
+                    .tool-name {
+                        background-color: $mat-col;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        padding: 3px;
+                        padding-left: 10px;
+                        padding-right: 5px;
+                        color: whitesmoke;
+                    }
+                    .tool-version {
+                        background-color: $mat-sec-col;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        padding: 3px;
+                        padding-left: 5px;
+                        padding-right: 10px;
+                        color: whitesmoke;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.note {
+    max-width: 400px;
+    background-color: $mat-col;
+    color: white;
+    position: relative;
+    top: 10px;
+    padding: 20px;
+    margin: 15px;
+    border-top-right-radius: 40px;
+    box-shadow: 5px 10px 5px 2px $shaddy;
+}
+
+#messageBox {
+    display: none;
+    position: fixed;
+    z-index: 40;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.85);
+    #contactMeForm {
+        background-color: $shaddy;
+        padding: 30px;
+        margin: auto;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+#formClose {
+    float: right;
+    cursor: pointer;
+    i {
+        color: rgb(197, 32, 32);
+    }
+}
+
+#scrollToTop {
+    width: min-content;
+    height: min-content;
+    position: fixed;
+    z-index: 35;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    i {
+        font-size: 20px;
+    }
+}
+
+#footer {
+    p {
+        text-align: center;
+    }
+}
+
+#messages {
+    display: flex;
+    flex-wrap: wrap;
+}

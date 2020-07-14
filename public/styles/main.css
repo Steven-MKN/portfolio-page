@@ -1,0 +1,221 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 30;
+}
+#navbar .nav-sect {
+  width: fit-content;
+  margin: 0;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-self: center;
+  justify-content: initial;
+}
+#navbar .nav-sect button {
+  margin-right: 30px;
+}
+#navbar .nav-sect h2 {
+  padding: 0;
+  padding-left: 20px;
+}
+#navbar #col-nav {
+  display: flex;
+}
+@media screen and (max-width: 886px) {
+  #navbar #col-nav {
+    display: none;
+  }
+  #navbar #col-nav button {
+    margin-bottom: 20px;
+  }
+}
+
+button i {
+  padding-right: 10px;
+}
+
+#intro {
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+#intro div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+#intro div .intro-sect {
+  position: relative;
+}
+#intro div .intro-sect button {
+  margin: 5px;
+}
+
+#profile-pic-div {
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  align-self: center;
+  border: 2px solid #520f0f;
+}
+#profile-pic-div img {
+  height: inherit;
+  overflow: hidden;
+}
+
+#btn-menu {
+  background-color: transparent;
+  display: none;
+}
+@media screen and (max-width: 886px) {
+  #btn-menu {
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#projects .project {
+  display: flex;
+  padding: 30px;
+  margin: 20px;
+  background-color: #dadada;
+  border-radius: 10px;
+}
+@media screen and (max-width: 886px) {
+  #projects .project {
+    flex-wrap: wrap;
+  }
+}
+#projects .project .proj-img-div {
+  width: 300px;
+  border-radius: 5px;
+  background-color: #0c3a5f;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+#projects .project .proj-img-div img {
+  display: block;
+  width: 280px;
+  margin: auto;
+}
+#projects .project .proj-sect {
+  width: fit-content;
+}
+#projects .project .proj-sect .proj-stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects .project .proj-sect .proj-stack .proj-tool {
+  display: inline-flex;
+  height: min-content;
+  margin: 10px;
+}
+#projects .project .proj-sect .proj-stack .proj-tool .tool-name {
+  background-color: #0c3a5f;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 5px;
+  color: whitesmoke;
+}
+#projects .project .proj-sect .proj-stack .proj-tool .tool-version {
+  background-color: #303030;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 10px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.note {
+  max-width: 400px;
+  background-color: #0c3a5f;
+  color: white;
+  position: relative;
+  top: 10px;
+  padding: 20px;
+  margin: 15px;
+  border-top-right-radius: 40px;
+  box-shadow: 5px 10px 5px 2px #dadada;
+}
+
+#messageBox {
+  display: none;
+  position: fixed;
+  z-index: 40;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+#messageBox #contactMeForm {
+  background-color: #dadada;
+  padding: 30px;
+  margin: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#formClose {
+  float: right;
+  cursor: pointer;
+}
+#formClose i {
+  color: #c52020;
+}
+
+#scrollToTop {
+  width: min-content;
+  height: min-content;
+  position: fixed;
+  z-index: 35;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+#scrollToTop i {
+  font-size: 20px;
+}
+
+#footer p {
+  text-align: center;
+}
+
+#messages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=main.css.map */

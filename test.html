@@ -1,0 +1,20 @@
+<div style="background: whitesmoke;">
+    <div style="background: #0c3a5f; width: 100%; height: 300px; display: flex; justify-content: center; overflow: hidden;">
+        <h1>Steven's Portfolio</h1>
+    </div>
+    <div style="padding:10px; padding-bottom: 20px;">
+        <h3>Hi Steven</h3>
+        <p>A visitor to your website has just messaged you.</p>
+        <p>Their message reads:</p>
+            <blockquote style="background: white; width:fit-content; padding: 20px; border-radius: 10px;">
+                <q>' . $data["inputMessage"] . '</q>
+                <br />
+                <br />
+                - ' . $data["inputName"] . '
+                <br />
+                <a href="mailto:' . $data["inputEmail"] . '">' . $data["inputEmail"] . '</a>
+            </blockquote>
+    <p>Thier contact details are listed above.</p>
+    <p>Steven's Portfolio Server</p>
+    </div>
+</div>

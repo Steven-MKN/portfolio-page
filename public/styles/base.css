@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+body {
+  background-color: whitesmoke;
+}
+
+/*
+    Buttons
+*/
+button {
+  background-color: #313131;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 4px;
+  font-family: "Times New Roman, Times, serif";
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #0c3a5f;
+}
+
+.btn-possitive {
+  background-color: #357a38;
+}
+
+.btn-negative {
+  background-color: #b2102f;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+/*
+    Headings, paragraph links and label
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman, Times, serif";
+  color: #0c3a5f;
+  padding: 20px;
+}
+
+.h1-big {
+  font-size: 2em;
+}
+
+label {
+  font-family: "Times New Roman, Times, serif";
+  color: #0c3a5f;
+  padding: 10px;
+}
+
+p {
+  font-family: "Times New Roman, Times, serif";
+  color: #0c3a5f;
+  padding: 10px;
+}
+
+a {
+  color: #3d5afe;
+}
+a :visited {
+  color: #2c387e;
+}
+
+/*
+    input, form and textareas
+*/
+form {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+input, textarea {
+  width: 90%;
+  margin-bottom: 25px;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px double gray;
+  border-radius: 5px;
+  color: gray;
+}
+input :focus, textarea :focus {
+  border: 2px solid gray;
+  color: black;
+}
+
+/*# sourceMappingURL=base.css.map */

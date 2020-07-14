@@ -62,7 +62,7 @@ $settings = json_decode($read, true);
                 
                 if (isset($settings["socialLinks"])) {
                     for ($i = 0; $i < count($settings["socialLinks"]); $i++){
-                        echo '<button class="btn-neutral" onclick="visit(' . $settings["socialLinks"][$i]["link"] . ')"><i class="fa fa-' . $settings["socialLinks"][$i]["type"] . '"></i>' . $settings["socialLinks"][$i]["name"] . '</button>';
+                        echo '<button class="btn-neutral" onclick="visit(\'' . $settings["socialLinks"][$i]["link"] . '\')"><i class="fa fa-' . $settings["socialLinks"][$i]["type"] . '"></i>' . $settings["socialLinks"][$i]["name"] . '</button>';
                     }
                 }
 
